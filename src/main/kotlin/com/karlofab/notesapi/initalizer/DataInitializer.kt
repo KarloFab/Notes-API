@@ -4,7 +4,9 @@ import com.karlofab.notesapi.repository.NotesRepository
 import org.springframework.boot.ApplicationArguments
 import com.karlofab.notesapi.domain.Note
 import org.springframework.boot.ApplicationRunner
+import org.springframework.stereotype.Component
 
+@Component
 class DataInitializer(private val repository: NotesRepository) : ApplicationRunner {
 
     @Throws(Exception::class)
